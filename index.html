@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTC Muzenza - Arte Marcial Afro-Brasileira</title>
+    <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/icons/logo_principal.png" type="image/svg+xml" alt="Logo" width="300" height="160">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#home" class="flex items-center">
+                <img src="https://www.ctcmuzenza.com.br/assets/images/logo_principal.png" alt="CTC Muzenza" class="h-12">
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="./index.html" class="text-red-600 font-medium hover:text-red-700">Home</a>
+                <a href="#sobre" class="hover:text-red-600">Sobre</a>
+                <a href="#class" class="hover:text-red-600">Modalidades</a>
+                <a href="#mestre" class="hover:text-red-600">Mestre</a>
+                <a href="#contact" class="hover:text-red-600">Contato</a>
+            </nav>
+            <a href="https://api.whatsapp.com/send?phone=5511945030845" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full font-medium flex items-center">
+                <i data-feather="message-square" class="mr-2"></i> MATRICULE-SE
+            </a>
+            <button class="md:hidden" id="menu-toggle">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white w-full px-4 py-2 shadow-md" id="mobile-menu">
+            <a href="./index.html" class="block py-2 text-red-600 font-medium">Home</a>
+            <a href="#about" class="block py-2">Sobre</a>
+            <a href="#class" class="block py-2">Modalidades</a>
+            <a href="#mestre" class="hover:text-red-600">Mestre</a>
+            <a href="#contact" class="block py-2">Contato</a>
+        </div>
+    </header>
+<br><br>
+    <!-- Hero Section --> 
+<section class="hero-gradient text-white py-20">
+  <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+<br><br>
+    <!-- Coluna de texto -->
+    <div class="md:w-1/2 mb-10 md:mb-0 md:pl-20" data-aos="fade-right" style="text-align: left;">
+<br><br>
+  <h1 class="text-4xl md:text-5xl font-bold mb-4">
+  <span style="color: red;">O melhor</span> 
+  <span style="
+      background: linear-gradient(90deg, black, white);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 900;">
+      CT
+  </span> 
+  <span style="color: red;">da região</span>
+</h1>
+
+<p class="text-xl mb-8" style="color: red; font-weight: 600;">
+  "Desperte o guerreiro dentro de você! Onde a energia das artes marciais se encontra com a paixão pelo movimento."
+</p>
+
+      <!-- Blocos centralizados -->
+      <div class="flex flex-col items-start space-y-4">
+
+        <!-- Primeira linha (2 blocos) -->
+        <div class="flex justify-start flex-wrap gap-4" style="margin-left: 8%;">
+
+          <div class="p-4 rounded-lg text-white hero-box"
+               style="background-color: rgba(255, 0, 0, 0.7); min-width: 160px;">
+            <p class="text-sm">Somos</p>
+            <p class="font-bold gradient-text">+200 alunos</p>
+          </div>
+
+          <div class="p-4 rounded-lg text-white hero-box"
+               style="background-color: rgba(0, 0, 0, 0.7); min-width: 160px;">
+            <p class="text-sm">Aqui tem</p>
+            <p class="font-bold gradient-text">+5 de modalidades</p>
+          </div>
+        </div>
+
+        <!-- Segunda linha (2 blocos) — removido orçamento e pintura -->
+        <div class="flex justify-start flex-wrap gap-4" style="margin-left: 7%;">
+
+          <div class="p-4 rounded-lg text-white"
+               style="background-color: rgba(0, 0, 0, 0.7); min-width: 160px;">
+            <p class="text-sm">Qualidade</p>
+            <p class="text-2xl font-bold gradient-text">Treinos completos</p>
+          </div>
+
+          <div class="p-4 rounded-lg text-white"
+               style="background-color: rgba(255,0,0,0.8); min-width: 160px;">
+            <p class="text-sm">Agendamento</p>
+            <p class="text-2xl font-bold gradient-text">WhatsApp</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+<!-- CSS RESPONSIVO -->
+<style>
+  .gradient-text {
+      background: linear-gradient(90deg, #ff0000, #000000, #ffffff, #070707);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+  }
+
+  @media (max-width: 768px) {
+    .hero-gradient .flex.flex-wrap {
+      justify-content: center !important;
+      margin-left: 0 !important;
+    }
+    .hero-gradient .flex.flex-wrap > div {
+      flex: 1 1 45%;
+      min-width: 150px;
+      text-align: center;
+    }
+    .hero-gradient .flex.flex-wrap.gap-4 {
+      gap: 1rem !important;
+    }
+    .hero-gradient h1,
+    .hero-gradient p {
+      text-align: center !important;
+    }
+    .hero-gradient .flex.flex-col.items-start {
+      align-items: center !important;
+    }
+  }
+</style>
+<!-- fim css -->
+<br><br>
+    <!-- Coluna da imagem -->
+    <div class="md:w-1/2 mt-10 md:mt-0" data-aos="fade-left"><br><br>
+      <img src="./assets/banner/ctc_groupo.png" 
+           alt="CTC Muzenza" 
+           class="rounded-lg shadow-xl mx-auto">
+    </div>
+
+  </div>
+</section>
+
+<hr>
+
+     <!-- Address Section -->
+    <section class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-600"><i data-feather="map-pin" class="inline mr-2"></i> Av. Eng. George Corbisier, 940 - Jabaquara, São Paulo - SP, 04345-000, Brasil</p>
+        </div>
+    </section>
+
+    <!-- About Section: Nossa História -->
+<section id="sobre" class="py-20" 
+style="background: linear-gradient(135deg, #8b0000, #3a3a3a);">
+
+    <style>
+        /* Título com degradê vermelho + preto */
+        .titulo-gradiente {
+            font-size: 32px;
+            font-weight: bold;
+            background: linear-gradient(90deg, red, black);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+
+        /* Textos principais em branco */
+        .texto-branco {
+            color: white !important;
+        }
+
+        /* Caixa de modalidades — fundo vermelho + letras brancas */
+        .caixa-modalidades {
+            background: #b30000; /* vermelho forte */
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .caixa-modalidades h4 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: white;
+        }
+
+        .caixa-modalidades li span {
+            color: white !important;
+        }
+
+        .icone-branco {
+            color: white !important;
+        }
+    </style>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center">
+
+            <!-- Imagem -->
+            <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                <img src="./assets/banner/ctc_grupo_muzenza.jpg" 
+                     alt="CTC Muzenza" 
+                     class="rounded-lg shadow-xl">
+
+                <!-- CAIXA MODALIDADES EM VERMELHO -->
+                <div class="mt-6 caixa-modalidades">
+                    <h4>NOSSAS MODALIDADES</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="icone-branco mr-2 mt-1 w-4 h-4"></i>
+                            <span>Capoeira — Nossa essência, tradição e cultura viva.</span>
+                        </li>
+
+                        <li class="flex items-start">
+                            <i data-feather="check" class="icone-branco mr-2 mt-1 w-4 h-4"></i>
+                            <span>Capoeira Kids — Desenvolvimento e disciplina através da ludicidade.</span>
+                        </li>
+
+                        <li class="flex items-start">
+                            <i data-feather="check" class="icone-branco mr-2 mt-1 w-4 h-4"></i>
+                            <span>Jiu-Jitsu — Autocontrole, técnica e inteligência estratégica.</span>
+                        </li>
+
+                        <li class="flex items-start">
+                            <i data-feather="check" class="icone-branco mr-2 mt-1 w-4 h-4"></i>
+                            <span>Muay Thai — Condicionamento e defesa pessoal.</span>
+                        </li>
+
+                        <li class="flex items-start">
+                            <i data-feather="check" class="icone-branco mr-2 mt-1 w-4 h-4"></i>
+                            <span>Treinamento Funcional — Resistência, força e vitalidade.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Texto da História -->
+            <div class="md:w-1/2">
+
+                <!-- TÍTULO PRINCIPAL EM DEGRADÊ -->
+                <h2 id="sobre" class="titulo-gradiente">
+    CTC MUZENZA — Onde a Tradição Encontra a Evolução
+</h2>
+
+                <p class="texto-branco mb-6">
+                    Bem-vindo ao CTC Muzenza, o Centro de Treinamento e Cultura que é muito mais do que uma academia — 
+                    é um ponto de encontro de história, movimento e comunidade no coração do bairro do Jabaquara, em São Paulo.
+                </p>
+
+                <p class="texto-branco mb-6">
+                    Sob a direção do renomado Mestre Cobrinha Muzenza, nosso espaço honra a tradição da capoeira enquanto 
+                    incorpora práticas modernas de treinamento. Mestre Cobrinha é mais do que um instrutor; é um guia que, com sua vasta experiência, 
+                    transmite valores, respeito, disciplina e cultura — moldando não apenas atletas, mas cidadãos conscientes.
+                </p>
+
+                <p class="texto-branco mb-6">
+                    No CTC Muzenza, você se torna parte de uma família dedicada ao crescimento contínuo, ao apoio mútuo e ao desenvolvimento pessoal. 
+                    Aqui, cada passo, cada ginga e cada treino representam evolução, tradição e união.
+                </p>
+
+                <!-- Caixa cinza original, porém texto branco agora -->
+                <div class="p-6 rounded-lg mb-6" style="background-color: rgba(255,255,255,0.15);">
+                    <p class="italic mb-4 texto-branco">
+                        "CTC Muzenza — mais do que uma academia, uma família.  
+                        Transforme sua vida através da disciplina, do movimento e da cultura."
+                    </p>
+                    <p class="font-bold texto-branco">— Equipe CTC Muzenza</p>
+                </div>
+
+                <a href="https://api.whatsapp.com/send?phone=5511945030845" target="_blank" 
+                   class="inline-flex items-center font-bold texto-branco">
+                    <i data-feather="message-square" class="mr-2 icone-branco"></i> Venha conhecer o CTC Muzenza
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Brands -->
+    <section class="py-12 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-wrap justify-center items-center gap-10 md:gap-20">
+
+            <!-- Capoeira -->
+            <div class="text-center">
+                <img src="./assets/icons/class-icon-1.png" 
+                     alt="Capoeira"
+                     class="h-16 mx-auto">
+                <!-- <p class="mt-2 font-semibold">Capoeira</p> -->
+            </div>
+
+            <!-- Capoeira Kids -->
+            <div class="text-center">
+                <img src="./assets/icons/class-icon-2.png" 
+                     alt="Capoeira Kids"
+                     class="h-16 mx-auto">
+                <!-- <p class="mt-2 font-semibold">Capoeira Kids</p> -->
+            </div>
+
+            <!-- Jiu-Jitsu -->
+            <div class="text-center">
+                <img src="./assets/icons/class-icon-3.png"
+                     alt="Jiu-Jitsu"
+                     class="h-16 mx-auto">
+                <!-- <p class="mt-2 font-semibold">Jiu-Jitsu</p> -->
+            </div>
+
+            <!-- Muay Thai -->
+            <div class="text-center">
+                <img src="./assets/icons/class-icon-4.png"
+                     alt="Muay Thai"
+                     class="h-16 mx-auto">
+                <!-- <p class="mt-2 font-semibold">Muay Thai</p> -->
+            </div>
+
+            <!-- Treinamento Funcional -->
+            <div class="text-center">
+                <img src="./assets/icons/class-icon-5.png"
+                     alt="Treinamento Funcional"
+                     class="h-16 mx-auto">
+                <!-- <p class="mt-2 font-semibold">Treinamento Funcional</p> -->
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- About Section: Mestre Cobrinha -->
+<section id="mestre" class="py-20" 
+style="background: linear-gradient(135deg, #8b0000, #3a3a3a);">
+
+    <style>
+        /* Título com degradê vermelho + preto */
+        .titulo-gradiente {
+            font-size: 32px;
+            font-weight: bold;
+            background: linear-gradient(90deg, red, black);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+
+        /* Textos em branco */
+        .texto-branco {
+            color: white !important;
+        }
+
+        /* Caixa vermelha de formações */
+        .caixa-formacoes {
+            background: #b30000;
+            padding: 20px;
+            border-radius: 12px;
+            color: white !important;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .caixa-formacoes h4 {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .caixa-formacoes li span {
+            color: white !important;
+        }
+
+        .icone-branco {
+            color: white !important;
+        }
+    </style>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center">
+
+            <!-- Imagem do Mestre -->
+            <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                <img src="./assets/banner/mestre-cobrinha-img.png" 
+                     alt="Mestre Cobrinha Muzenza" 
+                     class="rounded-lg shadow-xl">
+
+                <!-- CAIXA TÍTULOS EM VERMELHO -->
+                <div class="mt-6 caixa-formacoes" id="mestre">
+                    <h4>TÍTULOS E FORMAÇÕES</h4>
+                    <ul class="space-y-2">
+
+                        <li class="flex items-start">
+                            <i data-feather="award" class="icone-branco mr-2 mt-1 w-4 h-4"></i>
+                            <span>Campeão Paulista de Capoeira — 1992 e 1993</span>
+                        </li>
+
+                        <li class="flex items-start">
+                            <i data-feather="award" class="icone-branco mr-2 mt-1 w-4 h-4"></i>
+                            <span>Campeão Regional Sul — 1992</span>
+                        </li>
+
+                        <li class="flex items-start">
+                            <i data-feather="award" class="icone-branco mr-2 mt-1 w-4 h-4"></i>
+                            <span>Vice-Campeão Mundial — 2015</span>
+                        </li>
+
+                        <li class="flex items-start">
+                            <i data-feather="award" class="icone-branco mr-2 mt-1 w-4 h-4"></i>
+                            <span>3º lugar Mundial — 2023</span>
+                        </li>
+
+                        <li class="flex items-start">
+                            <i data-feather="award" class="icone-branco mr-2 mt-1 w-4 h-4"></i>
+                            <span>Campeão Mundial — 2025</span>
+                        </li>
+
+                        <li class="flex items-start">
+                            <i data-feather="book" class="icone-branco mr-2 mt-1 w-4 h-4"></i>
+                            <span>Licenciatura em Educação Física — 2012</span>
+                        </li>
+
+                        <li class="flex items-start">
+                            <i data-feather="globe" class="icone-branco mr-2 mt-1 w-4 h-4"></i>
+                            <span>Mais de 30 países visitados para shows, workshops e formaturas</span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Texto do Mestre -->
+            <div class="md:w-1/2">
+
+                <!-- TÍTULO PRINCIPAL DEGRADÊ -->
+                <h2 class="titulo-gradiente">
+                    A Trajetória de Mestre Cobrinha
+                </h2>
+
+                <p class="texto-branco mb-6">
+                    Mestre Cobrinha iniciou sua jornada na capoeira em 1988, no grupo Escravidão Independente, 
+                    sob a orientação de Mestre Gazo. Em 1993, integrou o Grupo de Capoeira Afro-Brasileiro (G.C.A.B.), 
+                    onde permaneceu até se tornar monitor em 1998.
+                </p>
+
+                <p class="texto-branco mb-6">
+                    Em 2000, fundou o grupo União de Raças Capoeira e, posteriormente, em 2004, criou a Associação Cultural 
+                    Carybé Capoeira, onde atuou até 2017. Logo após, ingressou no Grupo Muzenza, onde permanece até hoje, 
+                    consolidando sua história e expandindo seu legado.
+                </p>
+
+                <p class="texto-branco mb-6">
+                    Sua formação na capoeira inclui as graduações: Aluno Formado (1996), Monitor (1998), Professor (2000), 
+                    Mestrando (2010) e Mestre (2016). Seu currículo é marcado por conquistas expressivas em campeonatos estaduais, 
+                    nacionais e mundiais.
+                </p>
+
+                <p class="texto-branco mb-6">
+                    Atualmente, desenvolve trabalhos de capoeira em academias, escolas e condomínios, com representantes em diversos 
+                    estados brasileiros e países como Colômbia, Espanha, Irlanda, Equador e Chile.
+                </p>
+
+                <!-- Caixa final com transparência -->
+                <div class="p-6 rounded-lg mb-6" style="background-color: rgba(255,255,255,0.15);">
+                    <p class="italic mb-4 texto-branco">
+                        "Capoeira é mais do que luta — é cultura, identidade e transformação.  
+                        Minha missão é levar essa arte para o mundo, preservando sua essência e inspirando novas gerações."
+                    </p>
+                    <p class="font-bold texto-branco">— Mestre Cobrinha Muzenza</p>
+                </div>
+
+                <a href="https://api.whatsapp.com/send?phone=SEU_NUMERO_AQUI" 
+                   target="_blank" 
+                   class="inline-flex items-center font-bold texto-branco">
+                    <i data-feather="message-square" class="mr-2 icone-branco"></i> Fale com o Mestre Cobrinha
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-white">
+
+    <style>
+        /* Título Principal Degradê Vermelho + Preto */
+        .titulo-corpo-tecnico {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            background: linear-gradient(90deg, red, black);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 50px;
+        }
+
+        /* Grid */
+        .grid-corpo {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            justify-items: center;
+        }
+
+        /* Foto */
+        .foto-tecnico {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 14px;
+            border: 5px solid transparent;
+            background: linear-gradient(135deg, red, black) border-box;
+            padding: 3px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* 🔥 Efeito PULSAR no hover */
+        .foto-tecnico:hover {
+            transform: scale(1.07);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+            animation: pulse 0.9s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+            100% { transform: scale(1); }
+        }
+
+        /* Nome com degradê Vermelho → Preto → Cinza */
+        .nome-tecnico {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            background: linear-gradient(90deg, red, black, gray);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+        }
+
+        /* Responsivo */
+        @media (max-width: 900px) {
+            .grid-corpo {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid-corpo {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+
+    <h2 class="titulo-corpo-tecnico">CORPO TÉCNICO</h2>
+
+    <div class="max-w-6xl mx-auto px-4 grid-corpo">
+
+    <!-- Mestre Cobrinha -->
+    <div>
+        <img src="./assets/img/cobrinha.jpeg" class="foto-tecnico" alt="Mestre Cobrinha">
+        <p class="nome-tecnico">Marco Aurélio</p>
+        <p class="cargo-tecnico">(Mestre Cobrinha)</p>
+        <p class="modalidade-tecnico">Capoeira e Treinamento Funcional</p>
+    </div>
+
+    <!-- Contramestre Sagui -->
+    <div>
+        <img src="./assets/img/sagui.jpeg" class="foto-tecnico" alt="Contramestre Sagui">
+        <p class="nome-tecnico">Eleonildo Damaceno</p>
+        <p class="cargo-tecnico">(Contramestre Sagui)</p>
+        <p class="modalidade-tecnico">Capoeira</p>
+    </div>
+
+    <!-- Contramestre Gonga -->
+    <div>
+        <img src="./assets/img/gunga.jpeg" class="foto-tecnico" alt="Contramestre Gonga">
+        <p class="nome-tecnico">Alessandro Rodrigues</p>
+        <p class="cargo-tecnico">(Contramestre Gonga)</p>
+        <p class="modalidade-tecnico">Capoeira Infantil e Adulto</p>
+    </div>
+
+    <!-- Professora Roberta -->
+    <div>
+        <img src="./assets/img/roberta.jpeg" class="foto-tecnico" alt="Professora Roberta">
+        <p class="nome-tecnico">Roberta Kaihara</p>
+        <p class="cargo-tecnico">(Professora Roberta)</p>
+        <p class="modalidade-tecnico">Capoeira Feminina</p>
+    </div>
+
+    <!-- Professor Sabe Tudo -->
+    <div>
+        <img src="./assets/img/sabe tudo.jpeg" class="foto-tecnico" alt="Professor Sabe Tudo">
+        <p class="nome-tecnico">Diego Dantas</p>
+        <p class="cargo-tecnico">(Professor Sabe Tudo)</p>
+        <p class="modalidade-tecnico">Muay Thai</p>
+    </div>
+
+    <!-- Professor Isac -->
+    <div>
+        <img src="./assets/img/isac.jpeg" class="foto-tecnico" alt="Professor Isac">
+        <p class="nome-tecnico">Isac Figueiredo</p>
+        <p class="cargo-tecnico">(Professor Isac)</p>
+        <p class="modalidade-tecnico">Jiu Jitsu</p>
+    </div>
+
+</div>
+
+
+</section>
+
+
+ <!-- Gallery Section -->
+<section class="py-16" style="background: #000;">
+
+    <style>
+        /* Título principal com degradê branco → vermelho → cinza */
+        .titulo-galeria {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            background: linear-gradient(90deg, white, red, gray);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        /* Subtítulo */
+        .subtitulo-galeria {
+            font-size: 26px;
+            text-align: center;
+            font-weight: bold;
+            background: linear-gradient(90deg, red, white, gray);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+        }
+
+        /* Borda vermelha com branco */
+        .foto-galeria {
+            height: 250px;
+            width: auto;
+            border-radius: 12px;
+            border: 4px solid white;
+            outline: 4px solid red;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover interativo */
+        .foto-galeria:hover {
+            transform: scale(1.06);
+            box-shadow: 0 8px 20px rgba(255, 0, 0, 0.5);
+        }
+    </style>
+
+    <div class="container mx-auto px-4">
+
+        <h2 class="titulo-galeria">Galeria</h2>
+        <h3 class="subtitulo-galeria">#CTCMUZENZA</h3>
+
+        <div class="overflow-x-auto">
+            <div class="flex space-x-4 pb-4" style="width: max-content;">
+
+                <!-- Gallery Images -->
+                <img src="https://www.ctcmuzenza.com.br/Public/capoeira_adulto/capoeira_adulto_1.jpg" class="foto-galeria" alt="Capoeira">
+                <img src="https://www.ctcmuzenza.com.br/Public/capoeira_adulto/capoeira_adulto_2.jpg" class="foto-galeria" alt="Capoeira">
+                <img src="https://www.ctcmuzenza.com.br/Public/capoeira_adulto/capoeira_adulto_3.jpg" class="foto-galeria" alt="Capoeira">
+                <img src="https://www.ctcmuzenza.com.br/Public/capoeira_adulto/capoeira_adulto_4.jpg" class="foto-galeria" alt="Capoeira">
+                <img src="https://www.ctcmuzenza.com.br/Public/capoeira_adulto/capoeira_adulto_5.jpg" class="foto-galeria" alt="Capoeira">
+                <img src="https://www.ctcmuzenza.com.br/Public/capoeira_adulto/capoeira_adulto_6.jpg" class="foto-galeria" alt="Capoeira">
+                <img src="https://www.ctcmuzenza.com.br/Public/capoeira_adulto/capoeira_adulto_7.jpg" class="foto-galeria" alt="Capoeira">
+
+                <img src="https://www.ctcmuzenza.com.br/Public/capoeira_kids/capoeira_kids_1.jpg" class="foto-galeria" alt="Capoeira Kids">
+                <img src="https://www.ctcmuzenza.com.br/Public/capoeira_kids/capoeira_kids_2.jpg" class="foto-galeria" alt="Capoeira Kids">
+                <img src="https://www.ctcmuzenza.com.br/Public/capoeira_kids/capoeira_kids_3.jpg" class="foto-galeria" alt="Capoeira Kids">
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="mt-16" data-aos="fade-up">
+  <h3 class="text-3xl font-bold text-gray-800 mb-4">🥋 Venha Treinar no CTC Muzenza</h3>
+  <p class="text-gray-600 mb-6">
+    Conheça nossa estrutura profissional e viva a verdadeira energia da Capoeira Muzenza!  
+    Treinos para todas as idades — do iniciante ao avançado.
+  </p>
+
+  <button id="openMapBtn">Conhecer Espaço em 3D</button>
+
+  <style>
+    body {
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    button {
+      background-color: #d40000;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 40px;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+      transition: .3s;
+    }
+
+    button:hover {
+      background-color: #9a0000;
+    }
+
+    #mapModal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.85);
+    }
+
+    #mapContent {
+      position: relative;
+      margin: 3% auto;
+      width: 90%;
+      height: 85%;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 4px solid #d40000;
+      box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    #closeBtn {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #d40000;
+      font-size: 40px;
+      cursor: pointer;
+      transition: 0.2s;
+      font-weight: bold;
+      text-shadow: 0 0 10px black;
+    }
+
+    #closeBtn:hover {
+      color: #ffffff;
+    }
+  </style>
+
+  <!-- Modal -->
+  <div id="mapModal">
+    <div id="mapContent">
+      <span id="closeBtn">&times;</span>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1763927371686!6m8!1m7!1sCAoSHENJQUJJaEFrUjlPSmg3UHM5VG1XRjVQZUp3ejg.!2m2!1d-23.6447434649394!2d-46.64523550205777!3f329.8832306910214!4f-30.528625496093184!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+    </div>
+  </div>
+
+  <script>
+    const openBtn = document.getElementById('openMapBtn');
+    const modal = document.getElementById('mapModal');
+    const closeBtn = document.getElementById('closeBtn');
+
+    openBtn.onclick = () => modal.style.display = 'block';
+    closeBtn.onclick = () => modal.style.display = 'none';
+
+    window.onclick = (e) => {
+      if (e.target == modal) {
+        modal.style.display = 'none';
+      }
+    };
+  </script>
+</div>
+
+<!-- Bloco de Redes Sociais - CTC MUZENZA -->
+<div class="mt-10 bg-red-700 p-8 rounded-2xl shadow-md text-center text-white"
+     style="background: linear-gradient(135deg, #8b0000, #000000);">
+
+  <h3 class="text-2xl font-semibold mb-3" style="color: #ff3333;">
+    Siga o CTC Muzenza
+  </h3>
+
+  <p class="text-gray-200 mb-6">
+    Acompanhe nossas aulas, treinos, eventos e conteúdos exclusivos!
+  </p>
+
+  <div class="flex justify-center space-x-8">
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/ctc.muzenza/" 
+       target="_blank"
+       class="p-4 rounded-full transition transform hover:scale-110 shadow-xl"
+       style="background: linear-gradient(135deg, #ff0000, #000000);">
+      <i class="fa-brands fa-instagram text-3xl text-white"></i>
+    </a>
+
+    <!-- YouTube -->
+    <a href="https://www.youtube.com/@mestrecobrinhamuzenza/videos" 
+       target="_blank"
+       class="p-4 rounded-full transition transform hover:scale-110 shadow-xl"
+       style="background: linear-gradient(135deg, #ff0000, #000000);">
+      <i class="fa-brands fa-youtube text-3xl text-white"></i>
+    </a>
+
+  </div>
+</div>
+
+<!-- Font Awesome Ícones -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
+
+
+<br><br>
+
+
+
+    <!-- Video Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-2">Assista agora</h2>
+            <div class="max-w-4xl mx-auto mt-8 rounded-lg overflow-hidden shadow-xl">
+                <div class="aspect-w-16 aspect-h-9 bg-black">
+                    <iframe class="w-full h-96" src="https://www.youtube.com/embed/h4fvO_CkT6Q?si=AYkL1Tp2mVPDaH-t" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <br>
+            <div class="max-w-4xl mx-auto mt-8 rounded-lg overflow-hidden shadow-xl">
+                <div class="aspect-w-16 aspect-h-9 bg-black">
+                    <iframe class="w-full h-96" src="https://www.youtube.com/embed/nH0vmbQ_E-g?si=i_05oOuaOxzqYhde" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <!-- SESSÃO GRADUAÇÃO + HORÁRIOS -->
+<section 
+  class="py-20"
+  style="
+    background: linear-gradient(135deg, #8b0000, #000000);
+    padding: 60px 0;
+  "
+>
+  <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-10">
+
+    <!-- IMAGEM DAS GRADUAÇÕES -->
+    <div class="md:w-1/2 flex justify-center">
+      <img 
+        src="./assets/icons/graduacao.jpeg"
+        alt="Sistema de graduação de faixas"
+        style="
+          width: 100%;
+          max-width: 480px;
+          border: 8px solid white;
+          outline: 6px solid black;
+          border-radius: 12px;
+          box-shadow: 0 0 25px rgba(0,0,0,0.7);
+        "
+      >
+    </div>
+
+    <!-- ASIDE COM HORÁRIOS -->
+    <aside 
+      class="md:w-1/2 text-white p-6 rounded-xl shadow-xl"
+      style="background: rgba(0,0,0,0.45); border-left: 4px solid red;"
+    >
+      <h2 class="text-3xl font-bold mb-4">📅 Horários das Aulas</h2>
+
+      <!-- CAPOEIRA -->
+      <h3 class="text-xl font-bold text-red-400 mt-6 mb-2">HORÁRIOS - CAPOEIRA</h3>
+      <p>Segunda-feira<br>
+      19:00 Infantil (4+ anos)<br>
+      20:00 Adulto e Adolescente<br>
+      21:00 Adulto e Adolescente</p>
+
+      <p class="mt-3">Terça e Quinta<br>
+      12:00 Adulto e Adolescente<br>
+      20:00 Adulto e Adolescente</p>
+
+      <p class="mt-3">Quarta-feira<br>
+      19:00 Infantil (4+ anos)<br>
+      20:00 Adulto e Adolescente<br>
+      21:00 Feminino (somente elas)</p>
+
+      <p class="mt-3">Sexta-feira<br>
+      19:00 Infantil (4+ anos)<br>
+      20:30 Adulto e Adolescente – Turma Unificada</p>
+
+      <p class="mt-3">Sábado<br>
+      09:00 Adulto / Infantil / Adolescente</p>
+
+      <!-- JIU JITSU -->
+      <h3 class="text-xl font-bold text-red-400 mt-6 mb-2">HORÁRIOS - JIU JITSU</h3>
+      <p>Terça-feira – 19:00 às 20:00<br>
+      Quinta-feira – 19:00 às 20:00</p>
+
+      <!-- MUAY THAI -->
+      <h3 class="text-xl font-bold text-red-400 mt-6 mb-2">HORÁRIOS - MUAY THAI</h3>
+      <p>Terça-feira – 19:00 às 20:00<br>
+      Quinta-feira – 19:00 às 20:00</p>
+
+      <!-- FUNCIONAL -->
+      <h3 class="text-xl font-bold text-red-400 mt-6 mb-2">HORÁRIOS - TREINAMENTO FUNCIONAL</h3>
+      <p>Segunda-feira – 19:00 às 20:00<br>
+      Terça-feira – 19:00 às 20:00</p>
+
+    </aside>
+
+  </div>
+</section>
+
+
+    <!-- Classes Section -->
+    <section id="class" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-2">Modalidades</h2>
+                <p class="text-xl text-gray-600">Treinos para todos os objetivos</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Capoeira Adulto -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <img src="https://www.ctcmuzenza.com.br/Public/modalidades_ct/capoeira_adulto.jpg" alt="Capoeira Adulto" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm">Arte Marcial</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Capoeira</h3>
+                        <p class="text-gray-600 mb-4">Treine capoeira no CTC Mozenza fortaleça corpo e mente em uma comunidade inspiradora.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 100%"></div>
+                            </div>
+                            <span class="ml-2 text-sm font-medium">100%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Capoeira Kids -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <img src="https://www.ctcmuzenza.com.br/Public/modalidades_ct/capoeira_kids.jpg" alt="Capoeira Kids" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm">Arte Marcial</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Capoeira Kids</h3>
+                        <p class="text-gray-600 mb-4">Revitalize-se com o treino funcional, melhore a coordenação e encare os desafios diários com energia.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 100%"></div>
+                            </div>
+                            <span class="ml-2 text-sm font-medium">100%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Jiu Jitsu -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <img src="https://www.ctcmuzenza.com.br/Public/modalidades_ct/jiu_jitsu.jpg" alt="Jiu Jitsu" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm">Arte Marcial</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Jiu Jitsu</h3>
+                        <p class="text-gray-600 mb-4">Entre no universo do Jiu-Jitsu no CTC Mozenza e descubra os inúmeros benefícios dessa arte marcial.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 100%"></div>
+                            </div>
+                            <span class="ml-2 text-sm font-medium">100%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Muay Thai -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <img src="https://www.ctcmuzenza.com.br/Public/modalidades_ct/muay_thai.jpg" alt="Muay Thai" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm">Arte Marcial</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Muay Thai</h3>
+                        <p class="text-gray-600 mb-4">Explore os benefícios transformadores no CTC Mozenza. Venha descobrir o poder do Muay Thai.</p>
+                        <div class="flex justify-between items-center">
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-red-600 h-2.5 rounded-full" style="width: 100%"></div>
+                            </div>
+                            <span class="ml-2 text-sm font-medium">100%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Treinamento Funcional -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <img src="https://www.ctcmuzenza.com.br/Public/modalidades_ct/treinamento_img2.png" alt="Treinamento Funcional" class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm">Fortalecimento</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Treinamento Funcional</h3>
+                        <p class="text-gray-600 mb-4">Revitalize-se com o treino funcional, melhore a coordenação e encare os desafios diários com energia.</p>
+                        <a href="https://api.whatsapp.com/send?phone=5511945030845" class="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-full font-medium mt-4">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   <!-- Map Section -->
+    <section  id="unidades" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-8" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-4">Como Chegar</h2>
+      <p class="text-gray-600">Venha nos visitar e conhecer, sista a energia do nosso CT</p>
+      
+    </div>
+    <div class="bg-white rounded-lg overflow-hidden shadow-lg" data-aos="fade-up">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4996.893224559854!2d-46.6449658!3d-23.6448093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ae9a05dcf15%3A0x469e4264b85d9ca9!2sCTC%20MUZENZA!5e1!3m2!1spt-BR!2sbr!4v1763932436491!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <br>
+
+  </div>
+</section>
+
+   <!-- FOOTER CTC -->
+<section id="contact" class="py-16 bg-gray-900 text-white">
+  <div class="container mx-auto px-4">
+    
+    <div class="grid md:grid-cols-4 gap-12 text-center">
+
+      <!-- COLUNA 1 -->
+      <div>
+        <a href="#home" class="flex justify-center mb-4">
+          <img src="https://www.ctcmuzenza.com.br/assets/images/logo_principal.png" alt="CTC Muzenza" class="h-14">
+        </a>
+
+        <p class="italic mb-6 text-gray-300">
+          "Desperte a sua força interior no CTC"
+        </p>
+
+        <h4 class="font-bold text-red-500 mb-4 text-lg">Horário de Funcionamento</h4>
+
+        <ul class="space-y-2 text-gray-300">
+          <li>
+            <strong class="text-white">Segunda e Quarta</strong><br>
+            10:00 - 11:00 / 19:00 - 22:00
+          </li>
+
+          <li>
+            <strong class="text-white">Terça e Quinta</strong><br>
+            08:00 - 13:00 / 20:00 - 21:00
+          </li>
+
+          <li>
+            <strong class="text-white">Sexta</strong><br>
+            19:00 - 22:00
+          </li>
+
+          <li>
+            <strong class="text-white">Sábado e Domingo</strong><br>
+            Fechado
+          </li>
+        </ul>
+      </div>
+
+      <!-- COLUNA 2 -->
+      <div>
+        <h4 class="font-bold text-red-500 mb-4 text-lg">Outros Links</h4>
+
+        <ul class="space-y-3 text-gray-300">
+          <li><a href="https://www.ctcmuzenza.com.br/index.html" class="hover:text-red-400">Home</a></li>
+          <li><a href="https://www.ctcmuzenza.com.br/#about" class="hover:text-red-400">Sobre</a></li>
+          <li><a href="https://www.ctcmuzenza.com.br/#class" class="hover:text-red-400">Modalidades</a></li>
+          <li><a href="https://ctcmuzenza.smallbio.com.br/" class="hover:text-red-400">Contatos</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=5511982721072" class="hover:text-red-400">Parceiro</a></li>
+        </ul>
+      </div>
+
+      <!-- COLUNA 3 -->
+      <div>
+        <h4 class="font-bold text-red-500 mb-4 text-lg">Contate-nos</h4>
+
+        <ul class="space-y-3 text-gray-300">
+
+          <li class="flex justify-center items-start space-x-2">
+            <i data-feather="map-pin"></i>
+            <a href="https://www.google.com/maps/place/CTC+MUZENZA/"
+               class="hover:text-red-400">
+               Av. Eng. George Corbisier, 940 - SP
+            </a>
+          </li>
+
+          <li class="flex justify-center items-center space-x-2">
+            <i data-feather="phone"></i>
+            <a href="tel:11945030845" class="hover:text-red-400">11 94503-0845</a>
+          </li>
+
+          <li class="flex justify-center items-center space-x-2">
+            <i data-feather="mail"></i>
+            <a href="mailto:ctcmuzenza@gmail.com" class="hover:text-red-400">ctcmuzenza@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- COLUNA 4 -->
+      <div>
+        <h4 class="font-bold text-red-500 mb-4 text-lg">Redes Sociais</h4>
+
+        <div class="flex justify-center space-x-6 text-2xl mb-4">
+          <a href="https://www.facebook.com/ctcgrupomuzenza" class="hover:text-red-400"><i data-feather="facebook"></i></a>
+          <a href="https://www.instagram.com/ctc.muzenza" class="hover:text-red-400"><i data-feather="instagram"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=5511945030845" class="hover:text-red-400"><i data-feather="message-square"></i></a>
+          <a href="https://www.youtube.com/@mestrecobrinhamuzenza/videos" class="hover:text-red-400"><i data-feather="youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+ <!-- teste -->
+
+<!-- WhatsApp Float Button (HTML + CSS inline) -->
+<style>
+  /* estilos do botão flutuante */
+  .whatsapp-float {
+    position: fixed;
+    right: 1.5rem;              
+    bottom: 1.275rem;   /* SUBIU 15% AQUI! */
+    width: 56px;
+    height: 56px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    text-decoration: none;
+    z-index: 9999;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+
+  .whatsapp-float:hover {
+    transform: translateY(-3px) scale(1.06);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.22);
+  }
+
+  /* ícone SVG dentro do botão */
+  .whatsapp-float svg {
+    width: 26px;
+    height: 26px;
+    display: block;
+    fill: white;
+  }
+
+  /* label opcional */
+  .whatsapp-label {
+    position: fixed;
+    right: 4.3rem;
+    bottom: 1.6rem;
+    background: transparent;
+    color: #111;
+    font-weight: 600;
+    font-size: 0.95rem;
+    z-index: 9998;
+    display: none;
+    pointer-events: none;
+  }
+
+  @media (min-width: 1024px) {
+    .whatsapp-label { display: block; }
+  }
+</style>
+
+<!-- botão -->
+<a href="https://wa.me/5511945030845" target="_blank" class="whatsapp-float" aria-label="Conversar no WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <path d="M20.52 3.48A11.94 11.94 0 0012 0C5.373 0 .003 5.373.003 12 0 13.99.39 15.9 1.14 17.63L0 24l6.5-1.36A11.937 11.937 0 0012 24c6.627 0 12-5.373 12-12 0-3.19-1.25-6.12-3.48-8.52zM12 21.6c-1.85 0-3.62-.48-5.18-1.37l-.37-.21-3.88.81.84-3.67-.23-.39A9.6 9.6 0 012.4 12c0-5.31 4.29-9.6 9.6-9.6 2.56 0 4.96.98 6.78 2.76A9.56 9.56 0 0121.6 12c0 5.31-4.29 9.6-9.6 9.6z"/>
+    <path d="M17.05 14.32c-.29-.15-1.72-.85-1.99-.95-.27-.1-.46-.15-.66.15-.2.29-.77.95-.95 1.15-.18.2-.36.22-.65.07-.29-.15-1.23-.45-2.34-1.44-.87-.77-1.46-1.74-1.63-2.03-.17-.29-.02-.44.13-.59.13-.13.29-.34.44-.51.15-.17.2-.29.3-.49.1-.2.05-.37-.02-.51-.07-.14-.66-1.6-.9-2.19-.23-.57-.47-.49-.66-.5-.17-.01-.36-.01-.55-.01-.19 0-.5.07-.76.37-.27.31-1.04 1.01-1.04 2.47 0 1.46 1.06 2.87 1.2 3.07.15.2 2.07 3.26 5.02 4.56 2.95 1.3 3.64.93 4.29.87.66-.06 2.16-.88 2.46-1.73.3-.85.3-1.59.21-1.74-.09-.14-.34-.23-.64-.38z"/>
+  </svg>
+</a>
+
+
+    <!-- RODAPÉ FINAL -->
+    <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-center">
+
+      <p class="text-gray-300">
+        © 2025 <span class="text-white font-bold">CTC Muzenza</span>. Desenvolvido por 
+        <a href="https://api.whatsapp.com/send?phone=5511982721072" class="text-red-400 hover:underline font-bold">Zero One</a>
+      </p>
+
+      <div class="flex space-x-4 mt-4 md:mt-0">
+
+        <a href="https://api.whatsapp.com/send?phone=5511945030845"
+           class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-full text-sm font-semibold">
+          Matricule-se
+        </a>
+
+        <a href="https://api.whatsapp.com/send?phone=5511982721072"
+           class="border border-white hover:bg-white hover:text-gray-900 text-white px-5 py-2 rounded-full text-sm font-semibold">
+          Quero um site
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="fixed bottom-6 right-6 bg-red-600 text-white p-3 rounded-full shadow-lg hover:bg-red-700 transition">
+        <i data-feather="arrow-up"></i>
+    </a>
+
+    <script src="./js/script.js"></script>
+
+     <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div> 
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+</html>
