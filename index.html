@@ -108,7 +108,7 @@
 <!-- CSS RESPONSIVO -->
 <style>
   .gradient-text {
-      background: linear-gradient(90deg, #ff0000, #000000, #ffffff, #070707);
+      background: linear-gradient(90deg, white;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight: 700;
@@ -247,9 +247,24 @@ style="background: linear-gradient(135deg, #8b0000, #3a3a3a);">
             <div class="md:w-1/2">
 
                 <!-- TÍTULO PRINCIPAL EM DEGRADÊ -->
-                <h2 id="sobre" class="titulo-gradiente">
-    CTC MUZENZA — Onde a Tradição Encontra a Evolução
+                <style>
+  /* Força o texto branco e remove qualquer degradê aplicado na classe */
+  .titulo-gradiente {
+    background: none !important;
+    background-image: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    text-decoration-color: #ffffff !important;
+  }
+</style>
+
+<h2 id="sobre" class="titulo-gradiente">
+  CTC MUZENZA — Onde a Tradição Encontra a Evolução
 </h2>
+
+
 
                 <p class="texto-branco mb-6">
                     Bem-vindo ao CTC Muzenza, o Centro de Treinamento e Cultura que é muito mais do que uma academia — 
@@ -578,11 +593,11 @@ style="background: linear-gradient(135deg, #8b0000, #3a3a3a);">
         <p class="modalidade-tecnico">Capoeira</p>
     </div>
 
-    <!-- Contramestre Gonga -->
+    <!-- Contramestre Gunga -->
     <div>
         <img src="./assets/img/gunga.jpeg" class="foto-tecnico" alt="Contramestre Gonga">
         <p class="nome-tecnico">Alessandro Rodrigues</p>
-        <p class="cargo-tecnico">(Contramestre Gonga)</p>
+        <p class="cargo-tecnico">(Contramestre Gunga)</p>
         <p class="modalidade-tecnico">Capoeira Infantil e Adulto</p>
     </div>
 
